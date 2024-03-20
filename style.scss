@@ -55,6 +55,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-color);
 
   nav {
     display: flex;
@@ -297,7 +298,291 @@ header {
           color: var(--color);
           background: transparent;
           border: 2px solid var(--color);
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s ease-in;
+
+          &:hover {
+            color: #fff;
+            background: var(--color);
+            transform: translateY(-7px);
+            box-shadow: 0 0 0.7rem var(--color);
+          }
         }
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      .profile {
+        text-align: right;
+
+        img {
+          width: 450px;
+          height: auto;
+          background: var(--color);
+          border: 3px soild var(--color);
+          box-shadow: 0 0 40px var(--color);
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 80px var(--color);
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7em;
+
+    .about-left {
+      flex: 1;
+
+      img {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 25%;
+        border: 3px solid var(--color);
+        box-shadow: 0 0 40px var(--color);
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 80px var(--color);
+        }
+      }
+    }
+
+    .about-right {
+      flex: 2;
+
+      .about-info {
+        h2 {
+          font-size: 2.8em;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          color: var(--first);
+
+          span {
+            color: var(--color);
+          }
+        }
+
+        h3 {
+          font-size: 1.8em;
+          color: var(--first);
+          font-weight: 600;
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          color: var(--first);
+          line-height: 1.4em;
+          margin-bottom: 25px;
+        }
+
+        button {
+          font-size: 15px;
+          font-weight: 600;
+          padding: 12px 24px;
+          border-radius: 25px;
+          color: var(--color);
+          background: transparent;
+          border: 2px solid var(--color);
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s ease-in;
+
+          &:hover {
+            color: #fff;
+            background: var(--color);
+            transform: translateY(-7px);
+            box-shadow: 0 0 0.7rem var(--color);
+          }
+        }
+      }
+    }
+  }
+}
+
+.portfolio {
+  h2 {
+    font-style: 2.8em;
+    text-align: center;
+    color: var(--first);
+    margin-bottom: 1.5em;
+
+    span {
+      color: var(--color);
+    }
+  }
+
+  .portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+
+    .portfolio-box {
+      position: relative;
+      width: 375px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+        transition: 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      .portfolio-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 1.5em;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), var(--color));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(100%);
+        transition: 0.5s ease;
+
+        h4 {
+          font-style: 2em;
+          color: #fff;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.4em;
+          margin: 10px 15px 15px;
+          color: #fff;
+        }
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 3em;
+          height: 3em;
+          background: #fff;
+          border-radius: 50%;
+        }
+
+        i {
+          font-size: 1em;
+          color: #000;
+        }
+      }
+
+      &:hover .portfolio-info {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.contact {
+  h2 {
+    font-size: 2.8em;
+    text-align: center;
+    color: var(--first);
+    margin-bottom: 1em;
+
+    span {
+      color: var(--color);
+    }
+  }
+
+  form {
+    max-width: 40em;
+    margin: 1em auto;
+    text-align: center;
+    margin-bottom: 3em;
+
+    .input-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      input {
+        width: 49%;
+        padding: 1em;
+        font-size: 16px;
+        color: var(--first);
+        background: var(--clr-bg);
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        margin: 8px 0;
+
+        &::placeholder {
+          color: var(--place-clr);
+        }
+      }
+    }
+
+    textarea {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      color: var(--first);
+      background: var(--clr-bg);
+      border: none;
+      outline: none;
+      resize: none;
+      border-radius: 8px;
+      margin: 8px 0;
+
+      &::placeholder {
+        color: var(--place-clr);
+      }
+    }
+
+    button {
+      font-size: 15px;
+      font-weight: 600;
+      padding: 12px 24px;
+      margin-top: 1em;
+      border-radius: 25px;
+      color: #fff;
+      background: var(--color);
+      border: 2px sdolid var(--color);
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s ease-in;
+
+      &:hover {
+        color: var(--color);
+        background: transparent;
+        transform: translateY(-7px);
+        box-shadow: 0 0 0.7rem var(--color);
       }
     }
   }
