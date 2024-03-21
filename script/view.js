@@ -1,0 +1,147 @@
+const app = document.getElementById('app');
+
+updateview();
+
+function updateview() {
+  app.innerHTML = /*html*/ `
+  <header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="#"><span>Viktor E.</span> Degray</a>
+      </div>
+      <div class="list-darkmode-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <label class="mode">
+          <input type="checkbox" checked="checked" id="darkModeButton" />
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </label>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="home">
+  <div class="container">
+    <div class="home-info">
+      <div class="left">
+        <h3>Hello, I'm</h3>
+        <h1>Viktor E. Degray</h1>
+        <h4>and I'm <span class="multiple"></span></h4>
+        <p>
+          Hi! I'm Viktor Elliot Degray, a new and passionate web developer.
+          Wanting to learn as much about it as possible. I started learning
+          about programming 22.january 2024 at Start It.
+        </p>
+        <div class="social">
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/griminir" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+          <a href="https://discordid.netlify.app/?id=135189697092780032" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <div class="btn">
+          <button>Download CV</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="profile">
+          <img src="img/swain.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-wrapper">
+      <div class="about-left">
+        <img src="img/swain.png" alt="profilepic">
+
+      </div>
+      <div class="about-right">
+        <div class="about-info">
+          <h2>About <span>Me</span></h2>
+          <h3>Programmer</h3>
+          <p>
+            something something something
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2>Some <span>Projects</span></h2>
+
+    <div class="portfolio-wrapper">
+      <div class="portfolio-box">
+        <img src="img/levelUpLife.png" alt="project">
+        <div class="portfolio-info">
+          <h4>Application to help better your life</h4>
+          <p>An app that will help you set progressive goals to improve aspects of your life</p>
+          <a href="https://github.com/griminir/LevelUpLife" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="img/rockpaper.png" alt="project">
+        <div class="portfolio-info">
+          <h4>The first app I programmed</h4>
+          <p>This is just a simple rock paper scissor game, but it holds a dear place in my heart</p>
+          <a href="https://griminir.github.io/rock-paper-scissors/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="img/emoji.PNG" alt="project">
+        <div class="portfolio-info">
+          <h4>Something fun to make you smile</h4>
+          <p>Change emojies with the wave of your cursor</p>
+          <a href="https://griminir.github.io/emoji-generator/Random-emojies/index" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact <span>Me!</span></h2>
+    <form>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="Text" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-info">
+        <p>Copyright &copy; 2024 by Viktor E. Degray | All Rights Reserved </p>
+      </div>
+      <div class="iconTop">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  `;
+}
