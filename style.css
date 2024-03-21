@@ -541,4 +541,156 @@ header nav .list-darkmode-menu .hamburger.active .bar {
 .footer .footer-wrapper .iconTop a i {
   font-size: 1em;
   color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .home .home-info .left h1 {
+    font-size: 4em;
+  }
+  .home .home-info .right .profile img {
+    width: 450px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  body section {
+    padding: 8rem 5% 2rem;
+  }
+  header {
+    background: var(--mob-color);
+    position: sticky;
+    top: 0;
+    padding: 0 5%;
+    z-index: 9;
+  }
+  header nav .list-darkmode-menu ul {
+    position: fixed;
+    top: 89px;
+    left: -100%;
+    max-width: 60%;
+    width: 100%;
+    height: 100vh;
+    background: var(--mob-color);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2rem 5% 0;
+    transition: 0.3s ease;
+  }
+  header nav .list-darkmode-menu ul li a {
+    font-size: 22px;
+  }
+  header nav .list-darkmode-menu ul.active {
+    left: 0%;
+  }
+  header nav .list-darkmode-menu .hamburger {
+    display: block;
+  }
+  .home {
+    padding: 8rem 5% 2rem;
+  }
+  .home .home-info {
+    flex-direction: column-reverse;
+  }
+  .home .home-info .left {
+    padding-top: 50px;
+  }
+  .home .home-info .left p {
+    width: 100%;
+  }
+  .home .home-info .left .social {
+    display: none;
+  }
+  .home .home-info .right .profile {
+    margin-top: 25px;
+  }
+  .home .home-info .right .profile img {
+    width: 375;
+    height: auto;
+  }
+  .home .home-info .right .profile img:hover {
+    box-shadow: 0 0 60px var(--color);
+  }
+  .about .about-wrapper {
+    flex-direction: column-reverse;
+  }
+  .about .about-wrapper .about-img {
+    width: 375;
+    height: auto;
+  }
+  .about .about-wrapper .about-img:hover {
+    box-shadow: 0 0 60px var(--color);
+  }
+}
+@media screen and (max-width: 767px) {
+  header nav .list-darkmode-menu ul li a {
+    font-size: 20px;
+  }
+  .home .home-info .left h1 {
+    font-size: 3.6em;
+  }
+  .home .home-info .left h4 {
+    font-size: 1.8em;
+  }
+  .home .home-info .left p {
+    font-size: 14px;
+  }
+  .home .home-info .right .profile img {
+    width: 350px;
+    height: 525px;
+  }
+  .portfolio .portfolio-wrapper .portfolio-box {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 567px) {
+  header nav .logo a {
+    font-size: 28px;
+  }
+  .home .home-info .left h3 {
+    font-size: 1.8em;
+  }
+  .home .home-info .left h1 {
+    font-size: 2.5em;
+  }
+  .home .home-info .left h4 {
+    font-size: 1.4em;
+  }
+  .home .home-info .left p {
+    font-size: 14px;
+  }
+  .home .home-info .right .profile img {
+    width: 280px;
+    height: 450px;
+  }
+  .about .about-wrapper .about-left img {
+    width: 280px;
+    height: 450px;
+  }
+  .about .about-wrapper .about-right .about-info h2 {
+    font-size: 2.5em;
+  }
+  .portfolio h2 {
+    font-size: 2.5em;
+  }
+  .contact h2 {
+    font-size: 2.5em;
+  }
+  .contact form .input-box input {
+    width: 100%;
+  }
+  .footer {
+    padding: 1.2em 5%;
+  }
+  .footer .footer-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer .footer-wrapper .footer-info {
+    line-height: 1.5em;
+  }
+  .footer .footer-wrapper .iconTop {
+    margin-bottom: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */

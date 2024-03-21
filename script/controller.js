@@ -34,7 +34,7 @@ hamburger.addEventListener('click', () => {
 
 //multiple text
 const typed = new Typed('.multiple', {
-  strings: ['a programmer', 'an avid learner', 'and a gamer'],
+  strings: ['a programmer', 'an avid learner', 'a gamer at heart'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 500,
@@ -70,3 +70,10 @@ window.onscroll = () => {
     }
   });
 };
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navList.classList.remove('active');
+  });
+});
